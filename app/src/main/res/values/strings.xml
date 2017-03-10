@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="permission_location">You need to allow access to this device\'s location</string>
+    <string name="gps_network_not_enabled">GPS is not enabled. Enable it?</string>
+    <string name="open_location_settings">Open Settings</string>
+    <string name="cancel">Cancel</string>
+</resources>
