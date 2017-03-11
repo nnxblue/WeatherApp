@@ -5,6 +5,7 @@ package tech.hanafi.weatherapp.model;
  */
 
 public class CardWeather {
+    private int iconDrawableId;
     private String time;
     private String summary;
     private String temp;
@@ -12,10 +13,19 @@ public class CardWeather {
     public CardWeather() {
     }
 
-    public CardWeather(String time, String summary, String temp) {
+    public CardWeather(int iconDrawableId, String time, String summary, String temp) {
+        this.iconDrawableId = iconDrawableId;
         this.time = time;
         this.summary = summary;
         this.temp = temp;
+    }
+
+    public int getIconDrawableId() {
+        return iconDrawableId;
+    }
+
+    public void setIconDrawableId(int iconDrawableId) {
+        this.iconDrawableId = iconDrawableId;
     }
 
     public String getTime() {

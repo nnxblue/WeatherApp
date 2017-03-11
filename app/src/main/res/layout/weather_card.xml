@@ -11,16 +11,27 @@
         android:layout_gravity="center"
         android:layout_margin="@dimen/card_margin"
         android:elevation="3dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
         card_view:cardCornerRadius="@dimen/card_weather_radius">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <ImageView
+                android:id="@+id/imgWeatherForecastIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:scaleType="fitCenter"
+                android:layout_centerVertical="true"/>
+
             <TextView
                 android:id="@+id/txtTime"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imgWeatherForecastIcon"
                 android:paddingLeft="@dimen/weather_title_padding"
                 android:paddingRight="@dimen/weather_title_padding"
                 android:paddingTop="@dimen/weather_title_padding"
@@ -31,18 +42,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/txtTime"
+                android:layout_toRightOf="@+id/imgWeatherForecastIcon"
                 android:paddingLeft="@dimen/weather_title_padding"
                 android:paddingRight="@dimen/weather_title_padding"
-
                 android:textSize="@dimen/weather_title" />
+
             <TextView
                 android:id="@+id/txtSummary"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/txtTemp"
+                android:layout_toRightOf="@+id/imgWeatherForecastIcon"
+                android:paddingBottom="@dimen/weather_title_padding"
                 android:paddingLeft="@dimen/weather_title_padding"
                 android:paddingRight="@dimen/weather_title_padding"
-                android:paddingBottom="@dimen/weather_title_padding"
                 android:textSize="@dimen/weather_title" />
 
 

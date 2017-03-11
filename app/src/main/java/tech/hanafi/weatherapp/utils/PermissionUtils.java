@@ -3,6 +3,7 @@ package tech.hanafi.weatherapp.utils;
 import android.Manifest;
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.pm.PackageManager;
 import android.support.v4.app.ActivityCompat;
@@ -44,9 +45,9 @@ public class PermissionUtils {
 
     }
 
-    public static boolean isLocationPermitted(final Activity activity) {
-        boolean locationPermissionGranted = isPermissionGranted(activity, Manifest.permission.ACCESS_COARSE_LOCATION,
-                PermissionUtils.LOCATION_PERMISSION_REQUEST_CODE, activity.getString(R.string.permission_location));
+    public static boolean isLocationPermitted(final Context mContext) {
+        boolean locationPermissionGranted = isPermissionGranted((Activity)mContext, Manifest.permission.ACCESS_COARSE_LOCATION,
+                PermissionUtils.LOCATION_PERMISSION_REQUEST_CODE, mContext.getString(R.string.permission_location));
 
 
         return locationPermissionGranted;

@@ -4,4 +4,7 @@
     <string name="gps_network_not_enabled">GPS is not enabled. Enable it?</string>
     <string name="open_location_settings">Open Settings</string>
     <string name="cancel">Cancel</string>
+
+    <string name="msg_getting_data">Getting Data</string>
+    <string name="msg_error">Error</string>
 </resources>
